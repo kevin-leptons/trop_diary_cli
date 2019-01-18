@@ -1,0 +1,5 @@
+# Test
+
+```bash
+npm test
+```

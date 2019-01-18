@@ -1,0 +1,32 @@
+{
+  "name": "@trop/diary_cli",
+  "version": "0.1.0",
+  "description": "CLI logging service",
+  "bin": {
+    "trop-diary": "bin/cli.js"
+  },
+  "dependencies": {
+    "@trop/diary_nodejs": "^0.1.0",
+    "chalk": "^2.4.2",
+    "shelljs": "^0.8.3",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-leptons/trop_diary_cli.git"
+  },
+  "keywords": [
+    "cli",
+    "logging"
+  ],
+  "author": "Kevin Leptons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-leptons/trop_diary_cli/issues"
+  },
+  "homepage": "https://github.com/kevin-leptons/trop_diary_cli#readme"
+}
