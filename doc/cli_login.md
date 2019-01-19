@@ -1,9 +1,9 @@
 # login
 
 ```bash
-trop-diary login API_ENDPOINT
+trop-diary login EMAIL
 ```
 
-* `API_ENDPOINT` / string. URL refers to API endpoint.
+* `EMAIL` / string. Email as username.
 
 Login to service.

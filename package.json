@@ -6,8 +6,9 @@
     "trop-diary": "bin/cli.js"
   },
   "dependencies": {
-    "@trop/diary_nodejs": "^0.1.0",
+    "@trop/diary_nodejs": "^0.2.0",
     "chalk": "^2.4.2",
+    "inquirer": "^6.2.1",
     "shelljs": "^0.8.3",
     "yargs": "^12.0.5"
   },

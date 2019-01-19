@@ -7,7 +7,10 @@ const service = require('../lib')
 yargs.
 usage('$0 <cmd> [args]').
 
-command('login <endpoint>', 'Login to service', (yargs) => {
+command('set endpoint <url>', 'Set endpoint to service', (yargs) => {
+}, async_cli(service.cli_set_endpoint)).
+
+command('login <email>', 'Login to service', (yargs) => {
 }, async_cli(service.cli_login)).
 
 command('logout', 'Logout from service', (yargs) => {

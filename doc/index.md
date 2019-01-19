@@ -2,7 +2,9 @@
 
 # CLI
 
+* [set endpoint](cli_set_endpoint.md)
 * [login](cli_login.md)
+* [logout](cli_logout.md)
 * [status](cli_status.md)
 * [message](cli_message.md)
 
