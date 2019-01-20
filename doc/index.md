@@ -2,11 +2,14 @@
 
 # CLI
 
-* [set endpoint](cli_set_endpoint.md)
+* [set-endpoint](cli_set_endpoint.md)
 * [login](cli_login.md)
 * [logout](cli_logout.md)
 * [status](cli_status.md)
-* [message](cli_message.md)
+* [account-list](cli_account_list.md)
+* [account-create](cli_account_create.md)
+* [account-remove](cli_account_remove.md)
+* [message_list](cli_message_list.md)
 
 # Development
 
