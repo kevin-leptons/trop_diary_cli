@@ -5,9 +5,9 @@ CLI Logging Service.
 ## Usage
 
 ```bash
-trop-diary set endpoint http://api-endpoint-somewhere.com
+trop-diary set-endpoint http://api-endpoint-somewhere.com
 trop-diary login root@mail.com
-trop-diary message list
+trop-diary message-list
 ```
 
 ## Documents
