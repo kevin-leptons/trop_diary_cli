@@ -9,7 +9,7 @@
 * [account-list](cli_account_list.md)
 * [account-create](cli_account_create.md)
 * [account-remove](cli_account_remove.md)
-* [message_list](cli_message_list.md)
+* [message-list](cli_message_list.md)
 
 # Development
 
