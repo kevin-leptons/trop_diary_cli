@@ -7,13 +7,13 @@ const service = require('../lib')
 yargs.
 usage('$0 <cmd> [args]').
 
-command('set-endpoint <url>', 'Set endpoint to service', (yargs) => {
+command('set-endpoint <url>', 'Set API Endpoint', (yargs) => {
 }, async_cli(service.cli_set_endpoint)).
 
 command('account-create <email> <role>', 'Create a new account', (yargs) => {
 }, async_cli(service.cli_account_create)).
 
-command('account-list', 'List account', (yargs) => {
+command('account-list', 'List accounts', (yargs) => {
     yargs.
     option('keyword', {
         describe: 'Keyword to search with email',
@@ -25,19 +25,19 @@ command('account-list', 'List account', (yargs) => {
     })
 }, async_cli(service.cli_account_list)).
 
-command('account-remove <email>', 'Remove account', (yargs) => {
+command('account-remove <email>', 'Remove an account', (yargs) => {
 }, async_cli(service.cli_account_remove)).
 
-command('login <email>', 'Login to service', (yargs) => {
+command('login <email>', 'Login', (yargs) => {
 }, async_cli(service.cli_login)).
 
-command('logout', 'Logout from service', (yargs) => {
+command('logout', 'Logout', (yargs) => {
 }, async_cli(service.cli_logout)).
 
 command('status', 'Show service status', (yargs) => {
 }, async_cli(service.cli_status)).
 
-command('message-list', 'List log messages', (yargs) => {
+command('message-list', 'List messages', (yargs) => {
     yargs.
     option('page', {
         describe: 'Page index',
