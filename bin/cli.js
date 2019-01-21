@@ -44,10 +44,25 @@ command('message-list', 'List messages', (yargs) => {
         type: 'number',
         default: 1
     }).
-    option('size', {
-        describe: 'Page size',
-        types: 'number',
-        default: 8
+    option('label', {
+        describe: 'Log label',
+        types: 'string'
+    }).
+    option('from-level', {
+        describe: 'Minimum log level',
+        types: 'string'
+    }).
+    option('to-level', {
+        describe: 'Maximum log level',
+        types: 'string'
+    }).
+    option('from-date', {
+        describe: 'Minimum created date',
+        types: 'string'
+    }).
+    option('to-date', {
+        describe: 'Maximum created date',
+        types: 'string'
     })
 }, async_cli(service.cli_message_list)).
 

@@ -8,6 +8,7 @@
   "dependencies": {
     "@trop/diary_nodejs": "^0.4.0",
     "chalk": "^2.4.2",
+    "dateformat": "^3.0.3",
     "inquirer": "^6.2.1",
     "shelljs": "^0.8.3",
     "yargs": "^12.0.5"
