@@ -54,7 +54,7 @@ message-list [--page value] [--label value]
     * --to-level / string, maximum level of message, similar as --from-level
       but must be greater or equal
     * --from-date / string, message which is created from, by format
-      'YYYY-MM-DD[ hh:mm:ss]'
+      'YYYY-MM-DD[Thh:mm:ss]'
     * --to-date / string, message which is created before, similar as
       --from-date but must be greater or equal
 
