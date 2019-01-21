@@ -1,7 +1,7 @@
 {
   "name": "@trop/diary_cli",
   "version": "0.4.0",
-  "description": "CLI logging service",
+  "description": "Client command line for @trop/diary_api",
   "bin": {
     "trop-diary": "bin/cli.js"
   },
