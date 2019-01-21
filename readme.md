@@ -1,6 +1,6 @@
 # @trop/diary_cli
 
-CLI Logging Service.
+Client Command Line for interacting with `@trop/diary_api` - A Logging Service
 
 ## Usage
 
@@ -10,8 +10,12 @@ trop-diary login root@mail.com
 trop-diary message-list
 ```
 
-## Documents
+## References
 
 * [Changelog](changelog.md)
 * [Contribution](contribution.md)
 * [Document](doc/index.md)
+* [@trop/diary_api](https://www.npmjs.com/package/@trop/diary_api) -
+  API Endpoint
+* [@trop/diary_nodejs](https://www.npmjs.com/package/@trop/diary_nodejs) -
+  Node.js client library for interacting with API Endpint
