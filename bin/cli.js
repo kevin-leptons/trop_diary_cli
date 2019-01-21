@@ -37,7 +37,7 @@ command('logout', 'Logout from service', (yargs) => {
 command('status', 'Show service status', (yargs) => {
 }, async_cli(service.cli_status)).
 
-command('message-list', 'Work with log message', (yargs) => {
+command('message-list', 'List log messages', (yargs) => {
     yargs.
     option('page', {
         describe: 'Page index',
@@ -50,6 +50,9 @@ command('message-list', 'Work with log message', (yargs) => {
         default: 8
     })
 }, async_cli(service.cli_message_list)).
+
+command('message-find <id>', 'Find a message', (yargs) => {
+}, async_cli(service.cli_message_find)).
 
 strict().
 demandCommand().
