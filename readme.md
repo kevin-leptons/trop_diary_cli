@@ -6,7 +6,7 @@ Client Command Line for interacting with `@trop/diary_api` - A Logging Service
 
 ```bash
 trop-diary set-endpoint http://api-endpoint-somewhere.com
-trop-diary login root@mail.com
+trop-diary login
 trop-diary message-list
 ```
 
