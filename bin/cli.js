@@ -2,40 +2,41 @@
 
 const yargs = require('yargs')
 
-const service = require('../lib')
+const cmd = require('../lib')
+const execute_command = require('../lib/execute_command')
 
 yargs.
 usage('$0 <cmd> [args]').
 
 command('set-endpoint <url>', 'Set API Endpoint', (yargs) => {
-}, async_cli(service.cli_set_endpoint)).
+}, execute_command(cmd.conf, 'set_endpoint')).
 
-command('account-create <email> <role>', 'Create a new account', (yargs) => {
-}, async_cli(service.cli_account_create)).
+command('login', 'Login', (yargs) => {
+}, execute_command(cmd.auth, 'login')).
+
+command('logout', 'Logout', (yargs) => {
+}, execute_command(cmd.auth, 'logout')).
+
+command('status', 'Show service status', (yargs) => {
+}, execute_command(cmd.root, 'status')).
 
 command('account-list', 'List accounts', (yargs) => {
     yargs.
     option('keyword', {
-        describe: 'Keyword to search with email',
+        describe: 'Keyword to search for email',
         type: 'string'
     }).
     option('page', {
         describe: 'Page index',
-        types: 'string'
+        types: 'integer'
     })
-}, async_cli(service.cli_account_list)).
+}, execute_command(cmd.account, 'list')).
+
+command('account-create <email> <role>', 'Create a new account', (yargs) => {
+}, execute_command(cmd.account, 'create')).
 
 command('account-remove <email>', 'Remove an account', (yargs) => {
-}, async_cli(service.cli_account_remove)).
-
-command('login <email>', 'Login', (yargs) => {
-}, async_cli(service.cli_login)).
-
-command('logout', 'Logout', (yargs) => {
-}, async_cli(service.cli_logout)).
-
-command('status', 'Show service status', (yargs) => {
-}, async_cli(service.cli_status)).
+}, execute_command(cmd.account, 'remove')).
 
 command('message-list', 'List messages', (yargs) => {
     yargs.
@@ -64,22 +65,12 @@ command('message-list', 'List messages', (yargs) => {
         describe: 'Maximum created date',
         types: 'string'
     })
-}, async_cli(service.cli_message_list)).
+}, execute_command(cmd.message, 'list')).
 
 command('message-find <id>', 'Find a message', (yargs) => {
-}, async_cli(service.cli_message_find)).
+}, execute_command(cmd.message, 'find')).
 
 strict().
 demandCommand().
 help().
 argv
-
-function async_cli(async_fn) {
-    return (arg) => {
-        async_fn(arg).
-        catch(e => {
-            console.error(e)
-            process.exit(1)
-        })
-    }
-}

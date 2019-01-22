@@ -1,35 +1,24 @@
 # CLI
 
 ```text
-set-endpoint <url>             Set API endpoint
-account-create <email> <role>  Create a new account
-account-list                   List accounts
-account-remove <email>         Remove an account
-login <email>                  Login
-logout                         Logout
 status                         Show service status
+set-endpoint <url>             Set API endpoint
+login                          Login
+logout                         Logout
+account-list                   List accounts
+account-create <email> <role>  Create a new account
+account-remove <email>         Remove an account
 message-list                   List log messages
 message-find <id>              Find a message
+
+status
+
+    no input
 
 set-endpoint <url>
 
     * url / string, refers to endpoint API, for example
       'http://api-endpoint.com'
-
-account-create <emai> <role>
-
-    * email / string, email address of account, for example 'someone@mail.com'
-    * role / string, one of 'root' - all permisions, 'r' - read only messages,
-      'w' - write only messages, 'rw' - read/write messages
-
-account-list [--keyword value] [--page value]
-
-    * --keyword / string, for search email
-    * --page / integer, page index, begin from 1
-
-account-remove <email>
-
-    * email / string, username to remove
 
 login <email>
 
@@ -39,9 +28,20 @@ logout
 
     no input
 
-status
+account-list [--keyword value] [--page value]
 
-    no input
+    * --keyword / string, for search email
+    * --page / integer, page index, begin from 1
+
+account-create <emai> <role>
+
+    * email / string, email address of account, for example 'someone@mail.com'
+    * role / string, one of 'root' - all permisions, 'r' - read only messages,
+      'w' - write only messages, 'rw' - read/write messages
+
+account-remove <email>
+
+    * email / string, username to remove
 
 message-list [--page value] [--label value]
     [--from-level value] [--to-level value]
