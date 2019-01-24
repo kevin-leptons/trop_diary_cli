@@ -4,6 +4,7 @@
 
 * Compative with @trop/diary_api v0.9.0
 * Truncate long message on `message-list`
+* Use only one datetime format
 
 ## v0.5.0
 
