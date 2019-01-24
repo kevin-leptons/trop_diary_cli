@@ -5,6 +5,7 @@ status                         Show service status
 set-endpoint <url>             Set API endpoint
 login                          Login
 logout                         Logout
+key-create <role> <file>       Create a key
 account-list                   List accounts
 account-create <email> <role>  Create a new account
 account-remove <email>         Remove an account
@@ -27,6 +28,11 @@ login <email>
 logout
 
     no input
+
+key-create <role> <file>
+
+    * role / string, one of 'r', 'w', 'rw'
+    * file / string, path to key file
 
 account-list [--keyword value] [--page value]
 

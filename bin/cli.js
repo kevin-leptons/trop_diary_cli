@@ -17,6 +17,9 @@ command('login', 'Login', (yargs) => {
 command('logout', 'Logout', (yargs) => {
 }, execute_command(cmd.auth, 'logout')).
 
+command('key-create <role> <file>', 'Create a key for server-server', (yargs) => {
+}, execute_command(cmd.key, 'create')).
+
 command('status', 'Show service status', (yargs) => {
 }, execute_command(cmd.root, 'status')).
 
