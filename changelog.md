@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.0
+
+* Compative with @trop/diary_api v0.9.0
+* Truncate long message on `message-list`
+
 ## v0.5.0
 
 * Compative with @trop/diary_api v0.6.0
