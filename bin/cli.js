@@ -8,9 +8,6 @@ const execute_command = require('../lib/execute_command')
 yargs.
 usage('$0 <cmd> [args]').
 
-command('set-endpoint <url>', 'Set API Endpoint', (yargs) => {
-}, execute_command(cmd.conf, 'set_endpoint')).
-
 command('login', 'Login', (yargs) => {
 }, execute_command(cmd.auth, 'login')).
 

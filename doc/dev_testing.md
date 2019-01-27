@@ -1,5 +1,0 @@
-# Test
-
-```bash
-npm test
-```

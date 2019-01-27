@@ -1,4 +1,14 @@
-# CLI
+# Usage
+
+## Installation
+
+```bash
+npm i -g @trop/diary_cli
+```
+
+Then create configuration file, see [Configuration Files](#configuration-files)
+
+## Command Line
 
 ```text
 status                         Show service status
@@ -68,3 +78,20 @@ message-find <id>
 
     * id / string, identity of message
 ```
+
+## Configuration Files
+
+### ~/.config/trop_diary_cli.json
+
+```json
+{
+    "endpoint": "http://api-endpoint.com"
+}
+```
+
+* `endpoint` / string, URL refer to API Endpoint
+
+
+## Cache Files
+
+* `~/.cache/trop_diary_cli/token.json`, authentication token

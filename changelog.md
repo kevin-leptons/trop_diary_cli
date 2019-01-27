@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.0
+
+* Remove CLI `set-endpoint`
+* Move configuration file to `~/.config/trop_diary_cli.json`
+* Move token cache to file `~/.cache/trop_diary_cli.json`
+
 ## v0.10.0
 
 * Handle for refresh token
