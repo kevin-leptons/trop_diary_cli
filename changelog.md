@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.0
+
+* Compative with @trop/diary_api v0.11.0
+* Use @trop/diary_nodejs v0.10.0, fix few errors
+
 ## v0.7.0
 
 * Compative with @trop/diary_api v0.10.0
