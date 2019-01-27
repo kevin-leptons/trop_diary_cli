@@ -6,7 +6,7 @@
     "trop-diary": "bin/cli.js"
   },
   "dependencies": {
-    "@trop/diary_nodejs": "^0.7.0",
+    "@trop/diary_nodejs": "^0.8.0",
     "chalk": "^2.4.2",
     "dateformat": "^3.0.3",
     "inquirer": "^6.2.1",
