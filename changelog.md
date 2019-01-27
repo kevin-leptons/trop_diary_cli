@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.10.0
+
+* Handle for refresh token
+
 ## v0.9.0
 
 * Compative with @trop/diary_api v0.11.0
