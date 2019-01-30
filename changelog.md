@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.12.0
+
+* Use docsify as document tool
+
 ## v0.11.0
 
 * Remove CLI `set-endpoint`
