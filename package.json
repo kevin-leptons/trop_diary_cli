@@ -1,6 +1,6 @@
 {
   "name": "@trop/diary_cli",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "Client command line for @trop/diary_api",
   "bin": {
     "trop-diary": "bin/cli.js"
