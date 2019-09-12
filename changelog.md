@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.15.0
+
+* Fix display message
+
 ## v0.14.0
 
 * Change to YAML configuration file
