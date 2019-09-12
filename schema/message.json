@@ -1,0 +1,34 @@
+[
+    {
+        "$id": "//api/message/id",
+        "$ref": "//atom/uuid"
+    },
+    {
+        "$id": "//api/message/level",
+        "type": "integer",
+        "enum": [0, 1, 2, 3 ,4]
+    },
+    {
+        "$id": "//api/message/label",
+        "type": "string",
+        "pattern": "^[a-z0-9-]{0,16}$"
+    },
+    {
+        "$id": "//api/message/ip",
+        "oneOf": [
+            {
+                "$ref": "//atom/ipv4"
+            },
+            {
+                "$ref": "//atom/ipv6"
+            }
+        ]
+    },
+    {
+        "$id": "//api/message/created",
+        "$ref": "//atom/timestamp"
+    },
+    {
+        "$id": "//api/message/data"
+    }
+]

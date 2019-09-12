@@ -1,11 +1,9 @@
 # Configuration Files
 
-## ~/.config/trop_diary_cli.json
+## ~/.config/trop_diary_cli.yaml
 
-```json
-{
-    "endpoint": "http://api-endpoint.com"
-}
+```yaml
+endpoint: http://api-endpoint.com
 ```
 
 * `endpoint` / string - URL refers to API Endpoint
